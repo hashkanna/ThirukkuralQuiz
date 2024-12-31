@@ -32,7 +32,7 @@ The Thirukkural data used in this app is sourced from [tk120404/thirukkural](htt
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE.txt](LICENSE.txt) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ### Components
 - App Source Code: Apache License 2.0
