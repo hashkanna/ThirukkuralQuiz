@@ -1,0 +1,63 @@
+name: ThirukkuralQuiz
+options:
+  bundleIdPrefix: com.yourdomain
+  deploymentTarget: 
+    iOS: 15.0
+targets:
+  ThirukkuralQuiz:
+    type: application
+    platform: iOS
+    sources:
+      - path: ThirukkuralQuiz
+        excludes:
+          - "Supporting Files"
+    settings:
+      base:
+        INFOPLIST_FILE: ThirukkuralQuiz/Supporting Files/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourdomain.ThirukkuralQuiz
+        DEVELOPMENT_TEAM: YOUR_TEAM_ID
+    organizationName: Kannappan Sirchabesan
+    sources:
+      - path: ThirukkuralQuiz
+        group: ThirukkuralQuiz
+        type: group
+        children:
+          - path: App
+            group: App
+          - path: Features
+            group: Features
+            children:
+              - path: Core
+                children:
+                  - path: Views
+              - path: Learning
+                children:
+                  - path: Views
+                  - path: Models
+              - path: Quiz
+                children:
+                  - path: Views
+                  - path: Models
+              - path: Onboarding
+                children:
+                  - path: Views
+          - path: Core
+            group: Core
+            children:
+              - path: Database
+              - path: Models
+              - path: Utilities
+              - path: Localization
+          - path: Resources
+            group: Resources
+          - path: Supporting Files
+            group: Supporting Files
+    info:
+      path: ThirukkuralQuiz/Supporting Files/Info.plist
+      properties:
+        CFBundleDisplayName: "திருக்குறள் வினாடி வினா"
+        LSRequiresIPhoneOS: true
+        UILaunchStoryboardName: LaunchScreen
+        UIRequiredDeviceCapabilities: [armv7]
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait 

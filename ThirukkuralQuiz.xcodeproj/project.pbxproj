@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A3545BBD4859BA78EDE56D /* KuralChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_EC68EB58-97C6-45F4-915A-027347685535" /* KuralChapter.swift */; };
+		045A5968D3E8F10EE1C52299 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_7C25A6FF-C256-4D65-9EC9-7B0AD0F5DE23" /* ThemeManager.swift */; };
+		1068D30C088B5F76A3B71EE3 /* ThirukkuralQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_29F152EB-7069-4935-8369-DF23B1A912C4" /* ThirukkuralQuizUITests.swift */; };
+		1997F67703CEAEC783BC87CA /* AccessibilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_62A4F35D-BFB5-48C8-A1D7-3E8DCDB6F0F1" /* AccessibilityHelper.swift */; };
+		1AB9B7A74E6983FAE9C26399 /* ThirukkuralWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_1293EC3D-50E7-47FF-97F2-009C6D9D30BD" /* ThirukkuralWidget.swift */; };
+		1B48E426546908AFB5AE2BDA /* thirukkural.json in Resources */ = {isa = PBXBuildFile; fileRef = "TEMP_03A39ED6-543C-44DF-A71C-1C4E5DC36D2C" /* thirukkural.json */; };
+		1D6A9AA91D5AFFBF1C46EAFF /* RatingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_340B5A41-9FA0-46D2-BBEC-36904995D7B1" /* RatingManager.swift */; };
+		266DE4D153FC284FCEB81D5B /* FeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_40CE8961-4B21-4574-A886-76706CE544E7" /* FeedbackManager.swift */; };
+		304F11A6B426581F875F8521 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = "TEMP_56B385CC-3576-4B2B-B486-6EAD147FE4DD" /* README.md */; };
+		3B7C3CB03EB00FC685B845E7 /* StreakManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_B1D755DE-504F-450B-A533-D5529C5683FF" /* StreakManager.swift */; };
+		45DD6DFD1DE52C7CE4929B55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = "TEMP_BAEF3086-BC19-4FBF-B849-2219F040D29F" /* Preview Assets.xcassets */; };
+		49595E068F225A974545A817 /* ThirukkuralQuiz.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = "TEMP_CF9804D6-F993-44B2-8653-B60D85B0EF69" /* ThirukkuralQuiz.xcodeproj */; };
+		56E7A778AE90073B37C25768 /* AccessibilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_1560B91B-1E4E-4890-A594-E00E066E83EC" /* AccessibilityManager.swift */; };
+		5D38190A9A065F08CFB1215D /* GameProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_EC3B2F4A-DFAC-4816-9CB0-F4EEC02C613D" /* GameProgress.swift */; };
+		5EA5E4508B91FBA4CCE8E44D /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_A4AECAAB-0E58-4A01-AD81-9AEA83FEB9D9" /* LaunchScreen.swift */; };
+		62014E3FF6D229E561F6EA51 /* ThirukkuralQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_5ABF872D-7DC7-4761-8E03-F7D85909388C" /* ThirukkuralQuizApp.swift */; };
+		640D97ABDD5E22C4674FC44A /* ThirukkuralQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_2FDC7CFC-DF40-4A61-9925-AF94D35C5D58" /* ThirukkuralQuizTests.swift */; };
+		6FCBCDF9D0E1614DB0224CD5 /* TODO.md in Resources */ = {isa = PBXBuildFile; fileRef = "TEMP_3A309129-7EB5-4967-BB7D-3EE041984D1D" /* TODO.md */; };
+		71E29643A40A7AC46A51C8EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = "TEMP_0CAF2D82-D29B-4269-A165-951D26823A60" /* LaunchScreen.storyboard */; };
+		79FA477A49BF4C55A3ED20E8 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_BC0DD05E-B3F5-444B-9D25-024FD37C0E9B" /* HelpView.swift */; };
+		87F3B580F77C328D74F28E70 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_3E3FCA7E-1E08-44FB-A363-FEBC4B7C0D94" /* AnalyticsManager.swift */; };
+		8E75B2EA81D8838616067C8E /* ThirukkuralQuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_25094439-4B7B-47C6-A91B-EF5BE077BA16" /* ThirukkuralQuizUITestsLaunchTests.swift */; };
+		91273A8F702F1AF8C81595C2 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_BE518D09-95BE-443A-A6C6-911D7330A827" /* ShareView.swift */; };
+		920F4E725692C9FD77B63976 /* DailyQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_C4586744-265D-4A16-88B2-3562D1A879D0" /* DailyQuizView.swift */; };
+		925FA72DA35E6FA2DF9EDA0D /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_F1EEDEAA-F2D7-4002-8271-4856FA5F34C2" /* GameSettings.swift */; };
+		9D4A7895005952295943C5B0 /* DailyChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_4DDA8FBB-5EF4-4AC0-B4FB-794EA37232B2" /* DailyChallengeView.swift */; };
+		A26FC5D6BDAE93EF4FFD1770 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_155C42B1-0B2B-4942-9E7C-A050300986F0" /* NotificationManager.swift */; };
+		AA23E521FA439F67918439E8 /* ThirukkuralDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_6C42EAD1-ED53-474C-B824-D6F6C820BB8A" /* ThirukkuralDatabase.swift */; };
+		AFA0854F7439F28043BB0F0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_B8F828C5-1F86-4F71-942E-6DBEC1AC43F6" /* ContentView.swift */; };
+		B04D24EB94AF6F9C2E164706 /* DailyChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_DA5D47B0-2306-45AF-B3CE-E411DF350FC3" /* DailyChallenge.swift */; };
+		B12E52DB3522A9F1B5E2B14F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_55B9A856-2248-4189-8C2C-A6655625B3CF" /* SettingsView.swift */; };
+		C0F5366C337246850FF78C1D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = "TEMP_9D0F52E3-7E0A-4C83-A4B4-657EE0D3ECDC" /* LICENSE.txt */; };
+		C6EBC40375067E72F92A7D7D /* ShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_296019CF-C04E-4432-9EA1-60495140F27F" /* ShareManager.swift */; };
+		D13A2BCEB26256644742645B /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_1763AD33-CFC9-4854-B24E-93D5FAA4B758" /* TimerManager.swift */; };
+		D38B4E0857EFAE9C1AA32D96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = "TEMP_9214A2BB-6CD6-4304-9605-0ED49C498E9A" /* Assets.xcassets */; };
+		D448EAF2FF7C85122AAE956B /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_A1EC1278-AF9B-4581-B852-3D498C5EF6BD" /* Localizable.swift */; };
+		E08ACAFC6DE7D220BDDE6C3D /* LearningModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_4653A89A-1ECB-4065-B8BB-CB34C5099CEC" /* LearningModeView.swift */; };
+		E97093AA616DE19E0BCCE4BC /* ThirukkuralDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_A6132726-837F-4C6C-89A8-FBEFC0903A9F" /* ThirukkuralDatabase.swift */; };
+		E9B3E6F759AADD3E2DDE59EF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_2044D3A0-9E0F-42FF-842D-6FDE9FAA5315" /* OnboardingView.swift */; };
+		EF74BAEE9C3DA659750FB378 /* thirukkural_detail.json in Resources */ = {isa = PBXBuildFile; fileRef = "TEMP_3CEB58E6-C59F-48B7-ADBA-4DB04595538A" /* thirukkural_detail.json */; };
+		F8BC497CA06B138CBCB92838 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_DD59F9B3-0D7D-4BFC-961F-4FE1EE470739" /* ReviewManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E8F65E336D005F2C70113A8 /* ThirukkuralQuiz.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ThirukkuralQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		"TEMP_03A39ED6-543C-44DF-A71C-1C4E5DC36D2C" /* thirukkural.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = thirukkural.json; sourceTree = "<group>"; };
+		"TEMP_0CAF2D82-D29B-4269-A165-951D26823A60" /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		"TEMP_1293EC3D-50E7-47FF-97F2-009C6D9D30BD" /* ThirukkuralWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirukkuralWidget.swift; sourceTree = "<group>"; };
+		"TEMP_155C42B1-0B2B-4942-9E7C-A050300986F0" /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		"TEMP_1560B91B-1E4E-4890-A594-E00E066E83EC" /* AccessibilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityManager.swift; sourceTree = "<group>"; };
+		"TEMP_1763AD33-CFC9-4854-B24E-93D5FAA4B758" /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		"TEMP_2044D3A0-9E0F-42FF-842D-6FDE9FAA5315" /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		"TEMP_25094439-4B7B-47C6-A91B-EF5BE077BA16" /* ThirukkuralQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirukkuralQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		"TEMP_296019CF-C04E-4432-9EA1-60495140F27F" /* ShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareManager.swift; sourceTree = "<group>"; };
+		"TEMP_29F152EB-7069-4935-8369-DF23B1A912C4" /* ThirukkuralQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirukkuralQuizUITests.swift; sourceTree = "<group>"; };
+		"TEMP_2FDC7CFC-DF40-4A61-9925-AF94D35C5D58" /* ThirukkuralQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirukkuralQuizTests.swift; sourceTree = "<group>"; };
+		"TEMP_340B5A41-9FA0-46D2-BBEC-36904995D7B1" /* RatingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingManager.swift; sourceTree = "<group>"; };
+		"TEMP_3A309129-7EB5-4967-BB7D-3EE041984D1D" /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		"TEMP_3CEB58E6-C59F-48B7-ADBA-4DB04595538A" /* thirukkural_detail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = thirukkural_detail.json; sourceTree = "<group>"; };
+		"TEMP_3E3FCA7E-1E08-44FB-A363-FEBC4B7C0D94" /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		"TEMP_40CE8961-4B21-4574-A886-76706CE544E7" /* FeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackManager.swift; sourceTree = "<group>"; };
+		"TEMP_4653A89A-1ECB-4065-B8BB-CB34C5099CEC" /* LearningModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningModeView.swift; sourceTree = "<group>"; };
+		"TEMP_4DDA8FBB-5EF4-4AC0-B4FB-794EA37232B2" /* DailyChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeView.swift; sourceTree = "<group>"; };
+		"TEMP_55B9A856-2248-4189-8C2C-A6655625B3CF" /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		"TEMP_56B385CC-3576-4B2B-B486-6EAD147FE4DD" /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		"TEMP_5ABF872D-7DC7-4761-8E03-F7D85909388C" /* ThirukkuralQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirukkuralQuizApp.swift; sourceTree = "<group>"; };
+		"TEMP_62A4F35D-BFB5-48C8-A1D7-3E8DCDB6F0F1" /* AccessibilityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityHelper.swift; sourceTree = "<group>"; };
+		"TEMP_6C42EAD1-ED53-474C-B824-D6F6C820BB8A" /* ThirukkuralDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirukkuralDatabase.swift; sourceTree = "<group>"; };
+		"TEMP_7C25A6FF-C256-4D65-9EC9-7B0AD0F5DE23" /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		"TEMP_9214A2BB-6CD6-4304-9605-0ED49C498E9A" /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		"TEMP_9D0F52E3-7E0A-4C83-A4B4-657EE0D3ECDC" /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		"TEMP_A1EC1278-AF9B-4581-B852-3D498C5EF6BD" /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		"TEMP_A4AECAAB-0E58-4A01-AD81-9AEA83FEB9D9" /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		"TEMP_A6132726-837F-4C6C-89A8-FBEFC0903A9F" /* ThirukkuralDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirukkuralDatabase.swift; sourceTree = "<group>"; };
+		"TEMP_B182662A-8200-4221-A163-73636A71B80D" /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		"TEMP_B1D755DE-504F-450B-A533-D5529C5683FF" /* StreakManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakManager.swift; sourceTree = "<group>"; };
+		"TEMP_B8F828C5-1F86-4F71-942E-6DBEC1AC43F6" /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		"TEMP_BAEF3086-BC19-4FBF-B849-2219F040D29F" /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		"TEMP_BC0DD05E-B3F5-444B-9D25-024FD37C0E9B" /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		"TEMP_BE518D09-95BE-443A-A6C6-911D7330A827" /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		"TEMP_C4586744-265D-4A16-88B2-3562D1A879D0" /* DailyQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuizView.swift; sourceTree = "<group>"; };
+		"TEMP_CF9804D6-F993-44B2-8653-B60D85B0EF69" /* ThirukkuralQuiz.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ThirukkuralQuiz.xcodeproj; sourceTree = "<group>"; };
+		"TEMP_DA5D47B0-2306-45AF-B3CE-E411DF350FC3" /* DailyChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallenge.swift; sourceTree = "<group>"; };
+		"TEMP_DD59F9B3-0D7D-4BFC-961F-4FE1EE470739" /* ReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
+		"TEMP_E2420E96-400A-4E5B-BA8F-C489D2E17934" /* ThirukkuralQuiz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThirukkuralQuiz.entitlements; sourceTree = "<group>"; };
+		"TEMP_EC3B2F4A-DFAC-4816-9CB0-F4EEC02C613D" /* GameProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProgress.swift; sourceTree = "<group>"; };
+		"TEMP_EC68EB58-97C6-45F4-915A-027347685535" /* KuralChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuralChapter.swift; sourceTree = "<group>"; };
+		"TEMP_F1EEDEAA-F2D7-4002-8271-4856FA5F34C2" /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		16C0C305CA7043657D476BD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E8F65E336D005F2C70113A8 /* ThirukkuralQuiz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B87EC4D19C3F9E0D1D7DBB34 = {
+			isa = PBXGroup;
+			children = (
+				16C0C305CA7043657D476BD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"TEMP_107A9DB8-1145-49E6-89A8-4D1AA0A49B1C" /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_EC68EB58-97C6-45F4-915A-027347685535" /* KuralChapter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		"TEMP_1E506714-10AA-4FEE-8BE9-CC1B6E6118DC" /* ThirukkuralQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_E2420E96-400A-4E5B-BA8F-C489D2E17934" /* ThirukkuralQuiz.entitlements */,
+				"TEMP_DD59F9B3-0D7D-4BFC-961F-4FE1EE470739" /* ReviewManager.swift */,
+				"TEMP_BE518D09-95BE-443A-A6C6-911D7330A827" /* ShareView.swift */,
+				"TEMP_4DDA8FBB-5EF4-4AC0-B4FB-794EA37232B2" /* DailyChallengeView.swift */,
+				"TEMP_1560B91B-1E4E-4890-A594-E00E066E83EC" /* AccessibilityManager.swift */,
+				"TEMP_CDD618B1-F18A-4658-A12D-927C26DD9412" /* Core */,
+				"TEMP_60BE69C8-4011-4583-9665-526393B9AC3B" /* App */,
+				"TEMP_BC4CEBB8-BD6E-4AC2-B16E-EE444195410C" /* Resources */,
+				"TEMP_92E54D40-4706-4176-8C22-A5A0AB17FDD0" /* Features */,
+				"TEMP_E95F1246-2F24-42FC-89BD-105DE03C7E90" /* Preview Content */,
+				"TEMP_BEC8B3A0-4904-45D6-8514-781D8371DDD5" /* Supporting Files */,
+			);
+			path = ThirukkuralQuiz;
+			sourceTree = "<group>";
+		};
+		"TEMP_381077DC-8F60-4E24-AA21-057ACFD60C96" /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_EC3B2F4A-DFAC-4816-9CB0-F4EEC02C613D" /* GameProgress.swift */,
+				"TEMP_1763AD33-CFC9-4854-B24E-93D5FAA4B758" /* TimerManager.swift */,
+				"TEMP_155C42B1-0B2B-4942-9E7C-A050300986F0" /* NotificationManager.swift */,
+				"TEMP_7C25A6FF-C256-4D65-9EC9-7B0AD0F5DE23" /* ThemeManager.swift */,
+				"TEMP_B1D755DE-504F-450B-A533-D5529C5683FF" /* StreakManager.swift */,
+				"TEMP_296019CF-C04E-4432-9EA1-60495140F27F" /* ShareManager.swift */,
+				"TEMP_62A4F35D-BFB5-48C8-A1D7-3E8DCDB6F0F1" /* AccessibilityHelper.swift */,
+				"TEMP_340B5A41-9FA0-46D2-BBEC-36904995D7B1" /* RatingManager.swift */,
+				"TEMP_3E3FCA7E-1E08-44FB-A363-FEBC4B7C0D94" /* AnalyticsManager.swift */,
+				"TEMP_40CE8961-4B21-4574-A886-76706CE544E7" /* FeedbackManager.swift */,
+				"TEMP_F1EEDEAA-F2D7-4002-8271-4856FA5F34C2" /* GameSettings.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		"TEMP_3A727F10-C776-49AD-BE99-670B2836D311" /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_107A9DB8-1145-49E6-89A8-4D1AA0A49B1C" /* Models */,
+				"TEMP_86C017EF-F54A-4F1C-8B35-EF9C5FC9AAD0" /* Views */,
+			);
+			path = Learning;
+			sourceTree = "<group>";
+		};
+		"TEMP_49D7654E-23E8-480E-85E0-C4076E6610D0" /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_B2CB2F3B-973D-4D39-8AF9-BEF7972079A2" /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		"TEMP_4B901889-897C-4DA4-917B-D7450C698C63" /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_C4586744-265D-4A16-88B2-3562D1A879D0" /* DailyQuizView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		"TEMP_518303AE-83A0-4506-A634-890AE3B8799D" /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_8EDBE1F8-9EC4-4B50-B811-28E90D965C72" /* Views */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		"TEMP_5A61564A-2BAD-4BA3-BFEF-DE78242808FB" /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_6C42EAD1-ED53-474C-B824-D6F6C820BB8A" /* ThirukkuralDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		"TEMP_600F2059-DE99-4DA9-A2FE-5677C3CA28EA" /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_DA5D47B0-2306-45AF-B3CE-E411DF350FC3" /* DailyChallenge.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		"TEMP_605F502B-C567-4AAD-A6CD-9FA9F0DF99EA" /* ThirukkuralQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_3A309129-7EB5-4967-BB7D-3EE041984D1D" /* TODO.md */,
+				"TEMP_A6132726-837F-4C6C-89A8-FBEFC0903A9F" /* ThirukkuralDatabase.swift */,
+				"TEMP_CF9804D6-F993-44B2-8653-B60D85B0EF69" /* ThirukkuralQuiz.xcodeproj */,
+				"TEMP_AEE5387D-A93F-4F79-9EB2-434E84D22A7E" /* ThirukkuralWidget */,
+				"TEMP_1E506714-10AA-4FEE-8BE9-CC1B6E6118DC" /* ThirukkuralQuiz */,
+				"TEMP_E4AB8F80-EC89-4CD7-ABBE-2DFB9EB37031" /* ThirukkuralQuizUITests */,
+				"TEMP_ECCE3D6F-D69A-4FDB-8CEF-5B7B1D993C2D" /* Supporting Files */,
+				"TEMP_CAB84743-A1C1-495D-B384-41F766465BBE" /* ThirukkuralQuizTests */,
+			);
+			path = ThirukkuralQuiz;
+			sourceTree = "<group>";
+		};
+		"TEMP_60BE69C8-4011-4583-9665-526393B9AC3B" /* App */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_5ABF872D-7DC7-4761-8E03-F7D85909388C" /* ThirukkuralQuizApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		"TEMP_86C017EF-F54A-4F1C-8B35-EF9C5FC9AAD0" /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_4653A89A-1ECB-4065-B8BB-CB34C5099CEC" /* LearningModeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		"TEMP_8EDBE1F8-9EC4-4B50-B811-28E90D965C72" /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_55B9A856-2248-4189-8C2C-A6655625B3CF" /* SettingsView.swift */,
+				"TEMP_BC0DD05E-B3F5-444B-9D25-024FD37C0E9B" /* HelpView.swift */,
+				"TEMP_A4AECAAB-0E58-4A01-AD81-9AEA83FEB9D9" /* LaunchScreen.swift */,
+				"TEMP_B8F828C5-1F86-4F71-942E-6DBEC1AC43F6" /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		"TEMP_92E54D40-4706-4176-8C22-A5A0AB17FDD0" /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_518303AE-83A0-4506-A634-890AE3B8799D" /* Core */,
+				"TEMP_3A727F10-C776-49AD-BE99-670B2836D311" /* Learning */,
+				"TEMP_B7AD6BF9-5768-4CC9-A2CC-8018091F6A09" /* Quiz */,
+				"TEMP_49D7654E-23E8-480E-85E0-C4076E6610D0" /* Onboarding */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		"TEMP_AEE5387D-A93F-4F79-9EB2-434E84D22A7E" /* ThirukkuralWidget */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_1293EC3D-50E7-47FF-97F2-009C6D9D30BD" /* ThirukkuralWidget.swift */,
+			);
+			path = ThirukkuralWidget;
+			sourceTree = "<group>";
+		};
+		"TEMP_B2CB2F3B-973D-4D39-8AF9-BEF7972079A2" /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_2044D3A0-9E0F-42FF-842D-6FDE9FAA5315" /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		"TEMP_B7AD6BF9-5768-4CC9-A2CC-8018091F6A09" /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_600F2059-DE99-4DA9-A2FE-5677C3CA28EA" /* Models */,
+				"TEMP_4B901889-897C-4DA4-917B-D7450C698C63" /* Views */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		"TEMP_BC4CEBB8-BD6E-4AC2-B16E-EE444195410C" /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_0CAF2D82-D29B-4269-A165-951D26823A60" /* LaunchScreen.storyboard */,
+				"TEMP_9214A2BB-6CD6-4304-9605-0ED49C498E9A" /* Assets.xcassets */,
+				"TEMP_3CEB58E6-C59F-48B7-ADBA-4DB04595538A" /* thirukkural_detail.json */,
+				"TEMP_03A39ED6-543C-44DF-A71C-1C4E5DC36D2C" /* thirukkural.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		"TEMP_BEC8B3A0-4904-45D6-8514-781D8371DDD5" /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_56B385CC-3576-4B2B-B486-6EAD147FE4DD" /* README.md */,
+				"TEMP_9D0F52E3-7E0A-4C83-A4B4-657EE0D3ECDC" /* LICENSE.txt */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		"TEMP_C966DA96-1292-41DC-98E6-47C92FA54F8B" /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		"TEMP_CAB84743-A1C1-495D-B384-41F766465BBE" /* ThirukkuralQuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_2FDC7CFC-DF40-4A61-9925-AF94D35C5D58" /* ThirukkuralQuizTests.swift */,
+			);
+			path = ThirukkuralQuizTests;
+			sourceTree = "<group>";
+		};
+		"TEMP_CDD618B1-F18A-4658-A12D-927C26DD9412" /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_5A61564A-2BAD-4BA3-BFEF-DE78242808FB" /* Database */,
+				"TEMP_381077DC-8F60-4E24-AA21-057ACFD60C96" /* Utilities */,
+				"TEMP_DA5418E5-9C9D-47AC-935D-3FD7ED527E41" /* Localization */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		"TEMP_DA5418E5-9C9D-47AC-935D-3FD7ED527E41" /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_A1EC1278-AF9B-4581-B852-3D498C5EF6BD" /* Localizable.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		"TEMP_E4AB8F80-EC89-4CD7-ABBE-2DFB9EB37031" /* ThirukkuralQuizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_29F152EB-7069-4935-8369-DF23B1A912C4" /* ThirukkuralQuizUITests.swift */,
+				"TEMP_25094439-4B7B-47C6-A91B-EF5BE077BA16" /* ThirukkuralQuizUITestsLaunchTests.swift */,
+			);
+			path = ThirukkuralQuizUITests;
+			sourceTree = "<group>";
+		};
+		"TEMP_E95F1246-2F24-42FC-89BD-105DE03C7E90" /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_BAEF3086-BC19-4FBF-B849-2219F040D29F" /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		"TEMP_ECCE3D6F-D69A-4FDB-8CEF-5B7B1D993C2D" /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_B182662A-8200-4221-A163-73636A71B80D" /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		181C038280C29280F068B317 /* ThirukkuralQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09836AB6FEBF983D2F06D5C0 /* Build configuration list for PBXNativeTarget "ThirukkuralQuiz" */;
+			buildPhases = (
+				02E934007B523922C63661B5 /* Sources */,
+				82ABC9E87F04E03C614A61EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThirukkuralQuiz;
+			productName = ThirukkuralQuiz;
+			productReference = 2E8F65E336D005F2C70113A8 /* ThirukkuralQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		481D06DAE92A7E1A64ECD790 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					181C038280C29280F068B317 = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+					};
+				};
+			};
+			buildConfigurationList = BB85176B2419F5C5D64ADE9A /* Build configuration list for PBXProject "ThirukkuralQuiz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B87EC4D19C3F9E0D1D7DBB34;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				181C038280C29280F068B317 /* ThirukkuralQuiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82ABC9E87F04E03C614A61EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38B4E0857EFAE9C1AA32D96 /* Assets.xcassets in Resources */,
+				C0F5366C337246850FF78C1D /* LICENSE.txt in Resources */,
+				71E29643A40A7AC46A51C8EB /* LaunchScreen.storyboard in Resources */,
+				45DD6DFD1DE52C7CE4929B55 /* Preview Assets.xcassets in Resources */,
+				304F11A6B426581F875F8521 /* README.md in Resources */,
+				6FCBCDF9D0E1614DB0224CD5 /* TODO.md in Resources */,
+				49595E068F225A974545A817 /* ThirukkuralQuiz.xcodeproj in Resources */,
+				1B48E426546908AFB5AE2BDA /* thirukkural.json in Resources */,
+				EF74BAEE9C3DA659750FB378 /* thirukkural_detail.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02E934007B523922C63661B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1997F67703CEAEC783BC87CA /* AccessibilityHelper.swift in Sources */,
+				56E7A778AE90073B37C25768 /* AccessibilityManager.swift in Sources */,
+				87F3B580F77C328D74F28E70 /* AnalyticsManager.swift in Sources */,
+				AFA0854F7439F28043BB0F0E /* ContentView.swift in Sources */,
+				B04D24EB94AF6F9C2E164706 /* DailyChallenge.swift in Sources */,
+				9D4A7895005952295943C5B0 /* DailyChallengeView.swift in Sources */,
+				920F4E725692C9FD77B63976 /* DailyQuizView.swift in Sources */,
+				266DE4D153FC284FCEB81D5B /* FeedbackManager.swift in Sources */,
+				5D38190A9A065F08CFB1215D /* GameProgress.swift in Sources */,
+				925FA72DA35E6FA2DF9EDA0D /* GameSettings.swift in Sources */,
+				79FA477A49BF4C55A3ED20E8 /* HelpView.swift in Sources */,
+				02A3545BBD4859BA78EDE56D /* KuralChapter.swift in Sources */,
+				5EA5E4508B91FBA4CCE8E44D /* LaunchScreen.swift in Sources */,
+				E08ACAFC6DE7D220BDDE6C3D /* LearningModeView.swift in Sources */,
+				D448EAF2FF7C85122AAE956B /* Localizable.swift in Sources */,
+				A26FC5D6BDAE93EF4FFD1770 /* NotificationManager.swift in Sources */,
+				E9B3E6F759AADD3E2DDE59EF /* OnboardingView.swift in Sources */,
+				1D6A9AA91D5AFFBF1C46EAFF /* RatingManager.swift in Sources */,
+				F8BC497CA06B138CBCB92838 /* ReviewManager.swift in Sources */,
+				B12E52DB3522A9F1B5E2B14F /* SettingsView.swift in Sources */,
+				C6EBC40375067E72F92A7D7D /* ShareManager.swift in Sources */,
+				91273A8F702F1AF8C81595C2 /* ShareView.swift in Sources */,
+				3B7C3CB03EB00FC685B845E7 /* StreakManager.swift in Sources */,
+				045A5968D3E8F10EE1C52299 /* ThemeManager.swift in Sources */,
+				E97093AA616DE19E0BCCE4BC /* ThirukkuralDatabase.swift in Sources */,
+				AA23E521FA439F67918439E8 /* ThirukkuralDatabase.swift in Sources */,
+				62014E3FF6D229E561F6EA51 /* ThirukkuralQuizApp.swift in Sources */,
+				640D97ABDD5E22C4674FC44A /* ThirukkuralQuizTests.swift in Sources */,
+				1068D30C088B5F76A3B71EE3 /* ThirukkuralQuizUITests.swift in Sources */,
+				8E75B2EA81D8838616067C8E /* ThirukkuralQuizUITestsLaunchTests.swift in Sources */,
+				1AB9B7A74E6983FAE9C26399 /* ThirukkuralWidget.swift in Sources */,
+				D13A2BCEB26256644742645B /* TimerManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D083BD1BAFA96BC8E4531BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				INFOPLIST_FILE = "ThirukkuralQuiz/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourdomain.ThirukkuralQuiz;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8ED0B9989D8CB892C5B7BF23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AAE27ACEB5394CE732CD266D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3571D6BEE03C6E3BEB8AFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				INFOPLIST_FILE = "ThirukkuralQuiz/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourdomain.ThirukkuralQuiz;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09836AB6FEBF983D2F06D5C0 /* Build configuration list for PBXNativeTarget "ThirukkuralQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D083BD1BAFA96BC8E4531BF /* Debug */,
+				D3571D6BEE03C6E3BEB8AFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB85176B2419F5C5D64ADE9A /* Build configuration list for PBXProject "ThirukkuralQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE27ACEB5394CE732CD266D /* Debug */,
+				8ED0B9989D8CB892C5B7BF23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 481D06DAE92A7E1A64ECD790 /* Project object */;
+}
