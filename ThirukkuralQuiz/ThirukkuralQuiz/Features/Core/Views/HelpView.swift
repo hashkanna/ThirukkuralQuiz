@@ -2,6 +2,7 @@ import SwiftUI
 
 struct HelpView: View {
     @Environment(\.dismiss) var dismiss
+    @State private var showingTutorial = false
     
     var body: some View {
         NavigationView {
@@ -33,6 +34,15 @@ struct HelpView: View {
                 }
                 .padding()
                 
+                Button("விளையாட்டு விதிமுறைகள்") {
+                    showingTutorial = true
+                }
+                .font(.custom("Tamil Sangam MN", size: 18))
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                
                 Spacer()
             }
             .padding()
@@ -44,6 +54,9 @@ struct HelpView: View {
                     }
                 }
             }
+        }
+        .fullScreenCover(isPresented: $showingTutorial) {
+            OnboardingView(isShowingOnboarding: $showingTutorial)
         }
     }
 }

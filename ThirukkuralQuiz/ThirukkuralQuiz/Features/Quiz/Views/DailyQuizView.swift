@@ -1,5 +1,12 @@
 import SwiftUI
 
+extension String {
+    func replacingFirstOccurrence(of target: String, with replacement: String) -> String {
+        guard let range = self.range(of: target) else { return self }
+        return self.replacingCharacters(in: range, with: replacement)
+    }
+}
+
 struct DailyQuizView: View {
     let kural: Thirukkural
     @Environment(\.dismiss) var dismiss
@@ -22,14 +29,12 @@ struct DailyQuizView: View {
                 .fontWeight(.bold)
             
             VStack(alignment: .center, spacing: 8) {
-                Text(kural.Line1.replacingOccurrences(
-                    of: missingWord,
-                    with: "_____"
-                ))
-                Text(kural.Line2.replacingOccurrences(
-                    of: missingWord,
-                    with: "_____"
-                ))
+                Text(kural.Line1.contains(missingWord) ? 
+                    kural.Line1.replacingFirstOccurrence(of: missingWord, with: "_____") : 
+                    kural.Line1)
+                Text(kural.Line2.contains(missingWord) ? 
+                    kural.Line2.replacingFirstOccurrence(of: missingWord, with: "_____") : 
+                    kural.Line2)
             }
             .font(.custom("Tamil Sangam MN", size: 18))
             .multilineTextAlignment(.center)

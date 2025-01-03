@@ -130,18 +130,16 @@ struct ContentView: View {
                         let currentQuestion = questions[currentQuestionIndex]
                         
                         VStack(alignment: .center, spacing: 8) {
-                            Text(currentQuestion.kural.Line1.replacingOccurrences(
-                                of: currentQuestion.missingWord, 
-                                with: "_____"
-                            ))
+                            Text(currentQuestion.kural.Line1.contains(currentQuestion.missingWord) ? 
+                                currentQuestion.kural.Line1.replacingFirstOccurrence(of: currentQuestion.missingWord, with: "_____") : 
+                                currentQuestion.kural.Line1)
                             .lineLimit(1)
                             .minimumScaleFactor(0.9)
                             .fixedSize(horizontal: false, vertical: true)
                             
-                            Text(currentQuestion.kural.Line2.replacingOccurrences(
-                                of: currentQuestion.missingWord, 
-                                with: "_____"
-                            ))
+                            Text(currentQuestion.kural.Line2.contains(currentQuestion.missingWord) ? 
+                                currentQuestion.kural.Line2.replacingFirstOccurrence(of: currentQuestion.missingWord, with: "_____") : 
+                                currentQuestion.kural.Line2)
                             .lineLimit(1)
                             .minimumScaleFactor(0.9)
                             .fixedSize(horizontal: false, vertical: true)
@@ -221,17 +219,14 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            // Force reset onboarding for testing
-            UserDefaults.standard.set(false, forKey: "hasSeenOnboarding")
-            hasSeenOnboarding = false
-            
             if database.error == nil && questions.isEmpty {
                 questions = generateQuestions(count: settings.questionCount)
             }
             
-            // Show onboarding if it hasn't been seen
+            // Show onboarding only on first launch
             if !hasSeenOnboarding {
                 showingOnboarding = true
+                hasSeenOnboarding = true  // Set to true after first show
             }
         }
         .alert(isPresented: $showingScore) {

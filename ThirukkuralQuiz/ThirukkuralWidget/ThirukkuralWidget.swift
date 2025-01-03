@@ -30,19 +30,56 @@ struct DailyEntry: TimelineEntry {
 
 struct ThirukkuralWidgetEntryView : View {
     var entry: Provider.Entry
-
-    var body: some View {
-        VStack(spacing: 8) {
-            Text("இன்றைய குறள்")
-                .font(.custom("Tamil Sangam MN", size: 14))
-                .foregroundColor(.secondary)
-            
-            Text(entry.kural.Line1)
-                .font(.custom("Tamil Sangam MN", size: 16))
-            Text(entry.kural.Line2)
-                .font(.custom("Tamil Sangam MN", size: 16))
+    
+    private func calculateFontSize() -> CGFloat {
+        let line1Length = entry.kural.Line1.count
+        let line2Length = entry.kural.Line2.count
+        let maxLength = max(line1Length, line2Length)
+        
+        if maxLength > 80 {
+            return 3
+        } else if maxLength > 70 {
+            return 4
+        } else if maxLength > 60 {
+            return 5
+        } else if maxLength > 50 {
+            return 6
+        } else if maxLength > 40 {
+            return 7
+        } else if maxLength > 30 {
+            return 8
+        } else {
+            return 9
         }
-        .padding()
+    }
+    
+    var body: some View {
+        GeometryReader { geometry in
+            let fontSize = calculateFontSize()
+            
+            VStack(spacing: 6) {
+                Text("இன்றைய குறள்")
+                    .font(.custom("Tamil Sangam MN", size: 11))
+                    .foregroundColor(.secondary)
+                
+                VStack(spacing: 0) {
+                    Text(entry.kural.Line1)
+                        .font(.custom("Tamil Sangam MN", size: fontSize))
+                        .minimumScaleFactor(0.2)
+                        .lineLimit(1)
+                        .frame(maxWidth: geometry.size.width - 4)
+                        .fixedSize(horizontal: false, vertical: true)
+                    
+                    Text(entry.kural.Line2)
+                        .font(.custom("Tamil Sangam MN", size: fontSize))
+                        .minimumScaleFactor(0.2)
+                        .lineLimit(1)
+                        .frame(maxWidth: geometry.size.width - 4)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
     }
 }
 
