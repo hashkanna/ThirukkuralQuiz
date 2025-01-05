@@ -226,7 +226,6 @@ struct ContentView: View {
             // Show onboarding only on first launch
             if !hasSeenOnboarding {
                 showingOnboarding = true
-                hasSeenOnboarding = true  // Set to true after first show
             }
         }
         .alert(isPresented: $showingScore) {
@@ -249,6 +248,11 @@ struct ContentView: View {
         }
         .fullScreenCover(isPresented: $showingOnboarding) {
             OnboardingView(isShowingOnboarding: $showingOnboarding)
+                .onDisappear {
+                    // Set hasSeenOnboarding to true only after user completes tutorial
+                    UserDefaults.standard.set(true, forKey: "hasSeenOnboarding")
+                    hasSeenOnboarding = true
+                }
         }
         .sheet(isPresented: $showingShare) {
             ShareView(
