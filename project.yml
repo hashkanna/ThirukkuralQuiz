@@ -65,3 +65,16 @@ targets:
         UIRequiredDeviceCapabilities: [armv7]
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait 
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+        UIRequiredDeviceCapabilities:
+          - armv7
+          - arm64 
+        CFBundleIconFiles:
+          - AppIcon152x152
+        CFBundleIcons~ipad:
+          CFBundlePrimaryIcon:
+            CFBundleIconFiles:
+              - AppIcon152x152
+            UIPrerenderedIcon: false 
