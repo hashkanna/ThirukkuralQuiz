@@ -16,6 +16,9 @@ targets:
         INFOPLIST_FILE: ThirukkuralQuiz/Supporting Files/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.yourdomain.ThirukkuralQuiz
         DEVELOPMENT_TEAM: YOUR_TEAM_ID
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
     organizationName: Kannappan Sirchabesan
     sources:
       - path: ThirukkuralQuiz
@@ -55,6 +58,7 @@ targets:
     info:
       path: ThirukkuralQuiz/Supporting Files/Info.plist
       properties:
+        CFBundleIconName: AppIcon
         CFBundleDisplayName: "திருக்குறள் வினாடி வினா"
         LSRequiresIPhoneOS: true
         UILaunchStoryboardName: LaunchScreen
